@@ -1,0 +1,26 @@
+The default branch has been renamed!
+main2 is now named main
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m main2 main
+git fetch origin
+git branch -u main main
+git remote set-head origin -a
+
+
+---------------------------------------------
+create a new repository on the command line
+echo "# GitCommands" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vksarode/GitCommands.git
+git push -u origin main
+----------------------------------------------
+
+push an existing repository from the command line
+git remote add origin https://github.com/vksarode/GitCommands.git
+git branch -M main
+git push -u origin main
